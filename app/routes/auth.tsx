@@ -2,10 +2,10 @@ import { useEffect, useState } from "react"
 import { useLocation, useNavigate } from "react-router";
 import { usePuterStore } from "~/lib/puter"
 
-export const meta = () => [
+export const meta = () => ([
     { title: 'Elevatr | Auth' },
     { name: 'description', content: 'Log into your account.' }
-]
+])
 
 const auth = () => {
   const {isLoading, auth} = usePuterStore();
